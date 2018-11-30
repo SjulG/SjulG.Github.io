@@ -34,9 +34,29 @@ article {
   margin-bottom: 1em;
   padding: 1em;
 }
-h1 {
-  color: white;
-}
 h2 {
   color: white;
+}
+@-webkit-keyframes header {
+  0%  {color:red;}
+  12% {color: yellow;}
+  37% {color: green;}
+  63% {color: blue;}
+  88% {color: red;}
+}
+@keyframes header {
+  0%  {color: red;}
+  12% {color: yellow;}
+  37% {color: green;}
+  63% {color: blue;}
+  88% {color: red;}
+}
+h1
+{
+  color: red;
+  -webkit-animation-name: header;
+  -webkit-animation-duration: 2s;
+  animation-iteration-count: infinite;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
